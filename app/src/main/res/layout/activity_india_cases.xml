@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeColor"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/introCode"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:layout_below="@+id/appNameRelativeLayout"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/themeColorBasicOfCard"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.leo.simplearcloader.SimpleArcLoader
+                    android:id="@+id/loader"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:outlineSpotShadowColor="@color/profilePrimaryDark"
+                    android:visibility="visible"
+                    app:arc_style="simple_arc" />
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutIntro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/refreshIcon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:src="@drawable/refresh_icon" />
+
+                    <ImageView
+                        android:id="@+id/india_flag"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/indian" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/india_flag"
+                        android:text="India"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/coronaCasesTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/india_flag"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Coronavirus Cases:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/coronaCasesTvCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/coronaCasesTv"
+                        android:layout_centerHorizontal="true"
+                        android:text="0"
+                        android:textColor="@color/profilePrimaryDark" />
+
+                    <View
+                        android:id="@+id/v1"
+                        android:layout_width="150dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/coronaCasesTvCount"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#9E9E9E" />
+
+                    <TextView
+                        android:id="@+id/deathsTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/v1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Deaths:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/deathsTvCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/deathsTv"
+                        android:layout_centerHorizontal="true"
+                        android:text="0"
+                        android:textColor="@color/death" />
+
+                    <View
+                        android:id="@+id/v2"
+                        android:layout_width="150dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/deathsTvCount"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#9E9E9E" />
+
+                    <TextView
+                        android:id="@+id/recoveredTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/v2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Recovered:"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/recoveredTvCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/recoveredTv"
+                        android:layout_centerHorizontal="true"
+                        android:text="0"
+                        android:textColor="@color/green" />
+
+                    <View
+                        android:id="@+id/v3"
+                        android:layout_width="150dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/recoveredTvCount"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#9E9E9E" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/introCode"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/themeColorBasicOfCard"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.leo.simplearcloader.SimpleArcLoader
+                    android:id="@+id/loader2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:outlineSpotShadowColor="@color/profilePrimaryDark"
+                    android:visibility="visible"
+                    app:arc_style="simple_arc" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutAnyChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <com.anychart.AnyChartView
+
+                        android:id="@+id/anyCharView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>

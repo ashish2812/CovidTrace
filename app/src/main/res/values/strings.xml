@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CovidTrace</string>
+    <string name="slogan">Way to COVID-19 Tracing</string>
+    <string name="made_with_in_india">Made with ❤ in India</string>
+    <string name="description">provide pie-chart country wise data analysis of COVID-19</string>
+    <string name="pie_chart">pie-chart analysis</string>
+    <string name="real_time_update">RealTime Update</string>
+
+    <string name="real_time_update_Description">Real-Time Update About the COVID-19 update case</string>
+    <string name="corona_news_update">Corona Virus news Update</string>
+    <string name="corona_news_description">Full updation about the corona virus in the countries</string>
+    <string name="location">Location wise COVID-19 Cases</string>
+    <string name="location_description">Location wise data analysis about the current area.</string>
+    <string name="made_in_india">Made In India</string>
+    <string name="total_cases">Total Cases</string>
+    <string name="total_death">Total Death</string>
+    <string name="total_active_cases">Total Active Cases</string>
+    <string name="recovered">Total Recovered</string>
+    <string name="affectedCountries">Affected Countries</string>
+    <string name="critical">Total Critical Cases</string>
+    <string name="today_death">Today Death</string>
+</resources>
